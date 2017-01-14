@@ -4,12 +4,14 @@ package uk.co.ipolding.slack;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Value;
+import org.springframework.context.annotation.PropertySource;
 import org.springframework.util.Assert;
 import org.springframework.web.client.RestTemplate;
 import org.springframework.web.socket.WebSocketHandler;
 import org.springframework.web.socket.client.WebSocketClient;
 import org.springframework.web.socket.client.standard.StandardWebSocketClient;
 
+@PropertySource("classpath:slack.properties")
 public class SlackListener {
 
   private static final Logger log = LoggerFactory.getLogger(SlackListener.class);
