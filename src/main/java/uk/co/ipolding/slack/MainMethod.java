@@ -8,7 +8,7 @@ import java.io.IOException;
 public class MainMethod {
 
   public static void main(String... args) throws IOException {
-    String s = new SlackListener().connectToSlack(new BasicEcho());
+//    String s = new SlackConnector().connectToSlack(new BasicEcho());
 
     while (true) {
     }
