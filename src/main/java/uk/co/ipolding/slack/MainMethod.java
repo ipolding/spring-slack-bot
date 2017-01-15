@@ -7,11 +7,20 @@ import java.io.IOException;
  */
 public class MainMethod {
 
-  public static void main(String... args) throws IOException {
-//    String s = new SlackConnector().connectToSlack(new BasicEcho());
+  public static class EchoBot extends SlackBot {
 
-    while (true) {
+    @Override
+    void onMessage(String message) {
+      if (message.contains(getId())) {
+        System.out.println(message);
+      }
     }
+  }
+
+  public static void main(String... args) throws IOException {
+    EchoBot echoBot = new EchoBot();
+    echoBot.switchOn();
+    while (true) {}
   }
 
 }

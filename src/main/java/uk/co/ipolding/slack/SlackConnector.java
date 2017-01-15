@@ -3,14 +3,14 @@ package uk.co.ipolding.slack;
 
 import com.fasterxml.jackson.databind.DeserializationFeature;
 import com.fasterxml.jackson.databind.ObjectMapper;
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
 import org.springframework.util.Assert;
+import uk.co.ipolding.slack.entities.APIMethods;
+import uk.co.ipolding.slack.entities.APIResponses;
 
 import java.io.IOException;
 import java.util.Optional;
 
-import static uk.co.ipolding.slack.HttpClient.getUrl;
+import static uk.co.ipolding.slack.helpers.HttpClient.getUrl;
 
 public class SlackConnector {
 
@@ -27,22 +27,5 @@ public class SlackConnector {
         }
         return wsInitialization;
     }
-
-     /**
-     * returns the bot id
-     */
-//    public String connectToSlack(WebSocketHandler websocketHandler) throws IOException {
-//        log.info("Attemping connection to slack");
-//        APIResponses.WsInitialization initializedSession = initializeSession();
-//        connectWebSocket(initializedSession, websocketHandler);
-//        return initializedSession.getSelf().getId();
-//    }
-
-//    private void connectWebSocket(final APIResponses.WsInitialization initializedSession, WebSocketHandler
-//            websocketHandler) {
-//        WebSocketClient webSocketClient = new StandardWebSocketClient();
-//        log.info("connecting using {}", initializedSession.getUrl());
-//        webSocketClient.doHandshake(websocketHandler, initializedSession.getUrl());
-//    }
 
 }

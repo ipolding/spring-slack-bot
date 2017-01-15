@@ -1,4 +1,4 @@
-package uk.co.ipolding.slack;
+package uk.co.ipolding.slack.helpers;
 
 import java.io.ByteArrayOutputStream;
 import java.io.IOException;

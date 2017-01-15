@@ -1,4 +1,4 @@
-package uk.co.ipolding.slack;
+package uk.co.ipolding.slack.entities;
 
 public class Message {
 
