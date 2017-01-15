@@ -1,5 +1,7 @@
 package uk.co.ipolding.slack;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
+
 public class APIResponses {
 
   public static class WsInitialization {
