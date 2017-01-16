@@ -8,7 +8,7 @@ import javax.websocket.*;
 import java.io.IOException;
 import java.net.URI;
 
-import static uk.co.ipolding.slack.SlackConnector.connectToSlack;
+import static uk.co.ipolding.slack.helpers.SlackConnector.connectToSlack;
 
 public abstract class SlackBot {
 
